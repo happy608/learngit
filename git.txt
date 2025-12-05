@@ -1,0 +1,10 @@
+ ssh-keygen -t rsa -C "609866183@qq.com"
+
+
+echo "# learngit" >> README.md
+git init #本地初始化仓库
+git add README.md  #添加文件并提交（本地仓库有了提交记录才能推送）
+git commit -m "first commit"
+git branch -M main #强制将当前分支（通常是 master）重命名为 main，-M 保证重命名在目标分支已存在时也能生效；
+git remote add origin https://github.com/happy608/learngit.git  #把本地代码推送到远程的 main 分支（-u 表示关联本地和远程分支）
+git push -u origin main   #把当前分支main推送到远程
